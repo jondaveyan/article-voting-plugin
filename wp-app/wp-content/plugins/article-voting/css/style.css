@@ -1,0 +1,43 @@
+div#article-voting {
+    border: 2px dashed purple;
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.question {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #222;
+}
+.buttons button svg {
+    width: 21px;
+    margin-right: 10px;
+}
+.buttons {
+    display: flex;
+}
+.buttons button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.buttons button:first-child {
+    margin-right: 10px;
+}
+.buttons button span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #222;
+}
+#article-voting .buttons button:hover svg path, #article-voting .buttons button.active svg path {
+    fill: #0a57d9;
+}
+#article-voting .buttons button:hover, #article-voting .buttons button.active {
+    border-color: #0a57d9;
+}
